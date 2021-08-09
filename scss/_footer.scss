@@ -1,0 +1,75 @@
+@import "_colors";
+@import "_variables";
+@import "_mixins";
+
+/*-----------------------
+# Footer
+-------------------------*/
+.endPage {
+    @include flexbox (column, center, center);
+    background-color: $gray;
+    height: 35vh;
+
+    &__socialLinks {
+        list-style-type: none;
+        @include flexbox (row, space-around, null);
+        width: 28%;
+
+        .socialLinks__item {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .socialLinks__Instagram {
+            color: #FF0080;
+        }
+
+        .socialLinks__Facebook {
+            color: #3B5998;
+        }
+
+        .socialLinks__Twitter {
+            color: #00ACEE;
+        }
+
+        .socialLinks__Youtube {
+            color: #C4302B;
+        }
+    }
+
+    &__copyRight {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+}
+
+
+/*-----------------------
+# Media Queries   
+-------------------------*/
+@media only screen and (max-width:600px) {
+
+    .endPage {
+    
+        &__socialLinks {
+    
+            .socialLinks__item {
+                margin: 0 5px 0 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    .endPage {
+    
+        &__socialLinks {
+    
+            .socialLinks__item {
+                margin: 0 10px 0 10px;
+            }
+        }
+    }
+}

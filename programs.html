@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programas | Ocean Being</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tammudu+2:wght@500&family=Mate+SC&family=Montserrat&family=Sigmar+One&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="headMenu">
+    <nav class="headMenu__navigationBar navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navigationBar__logo navbar-brand" href="index.html">OCEAN BEING</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navigationBar__menuBox collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="menuBox__list navbar-nav">
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="about.html">Quiénes somos</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link active" href="programs.html">Programas</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="contact.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--Programas-->
+    <section class="programsDivision">
+      <h1>Programas</h1>
+      <article class="programsDivision__programsCard flexColumnMobile flexRowMobile">
+        <div class="programsCard__iconContainer">
+          <img src="logos/white-home-icon.png" alt="Ícono casa">
+          <p class="iconContainer__text">Ayuda desde casa</p>
+        </div>
+        <div class="programsCard__description">
+          <h2 class="subtitle">Capacítate para contribuir desde tu casa con la protección del océano.
+          </h2>
+          <ul class="description__list">
+            <li>Asesoría personalizada.</li>
+            <li>Kits de reciclaje y aseo personal eco friendly.</li>
+            <li>Descuentos en la línea de productos para el hogar sostenibles con el medio ambiente.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="programsDivision__programsCard programsDivision__pinkCard flexColumnMobile flexRowMobile">
+        <div class="programsCard__description">
+          <h2 class="subtitle">Viaja con un grupo capacitado para participar de limpieza de zonas
+            costeras.
+          </h2>
+          <ul class="description__list">
+            <li>Programa de capacitación.</li>
+            <li>Kit de viaje ecológico.</li>
+            <li>Descuentos y convenios en paquetes de viaje de ecoturismo.</li>
+          </ul>
+        </div>
+        <div class="programsCard__iconContainer">
+          <img src="logos/limpieza.png" alt="Ícono limpieza">
+          <p class="iconContainer__text">Costas limpias</p>
+        </div>
+      </article>
+      <article class="programsDivision__programsCard flexColumnMobile flexRowMobile">
+        <div class="programsCard__iconContainer">
+          <img src="logos/snorkel.png" alt="Ícono buceo">
+          <p class="iconContainer__text">Buceo y Snorkel</p>
+        </div>
+        <div class="programsCard__description">
+          <h2 class="subtitle">Únete a nuestra comunidad de ciudadanos científicos en la recolección
+            de datos
+            que
+            ayudan a conocer el estado real de los corales, especies y desechos marinos.</h2>
+          <ul class="description__list">
+            <li>Programa de capacitación y entrenamiento.</li>
+            <li>Kit ecológico de buceo o Snorkel.</li>
+            <li>Descuentos y convenios en paquetes de viaje de ecoturismo.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <!--Fin Programas-->
+
+    <!--Banner mensaje-->
+    <div class="blueBannerContainer">
+      <p class="blueBannerContainer__text">Haz parte de la historia que queremos contar</p>
+    </div>
+    <!--Fin Banner mensaje-->
+
+    <!--Div imágenes-->
+    <div class="rowImgPrograms flexColumnMobile gridImgRowPrograms">
+      <img class="rowImgPrograms__image rowImg1 img-fluid" src="img/tortugas.jpg"
+        alt="Tortugas en aguas cristalinas de Isla de Pascua, Chile">
+      <img class="rowImgPrograms__image rowImg2 img-fluid" src="img/nemo.jpg"
+        alt="Arrecife de coral con peces payaso en Isla del Coco, Costa Rica">
+      <img class="rowImgPrograms__image rowImg3 img-fluid" src="img/delfines.jpg"
+        alt="Delfines mirando a la cámara en el mar de Honduras">
+      <img class="rowImgPrograms__image rowImg4 img-fluid" src="img/pezVolador.jpg"
+        alt="Mantarraya voladora en Mar de Cortés, México">
+      <img class="rowImgPrograms__image rowImg5 img-fluid" src="img/lobos.jpg"
+        alt="Lobos marinos en Mar de Cortés, México">
+    </div>
+    <!--Fin Div imágenes-->
+
+  </main>
+
+  <footer class="endPage">
+    <ul class="endPage__socialLinks">
+      <li><a class="socialLinks__item socialLinks__Instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li><a class="socialLinks__item socialLinks__Facebook" href="https://www.facebook.com/" target="_blank">Facebbok</a></li>
+      <li><a class="socialLinks__item socialLinks__Twitter" href="https://twitter.com/" target="_blank">Twitter</a></li>
+      <li><a class="socialLinks__item socialLinks__Youtube" href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    </ul>
+    <p class="endPage__copyRight">Ocean Being - Derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

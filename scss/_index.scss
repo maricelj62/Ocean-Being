@@ -1,0 +1,247 @@
+@import "_colors";
+@import "_variables";
+@import "_mixins";
+/*-----------------------
+# Inicio 
+-------------------------*/
+.indexCarousel {
+
+    &__carouselItem {
+        background-size: cover;
+        @extend .indexCarousel;
+
+        .carouselItem__carouselLegend {
+            color: $bodyColor;
+
+            .carouselLegend__mainTitle {
+                margin-bottom: 1vh;
+            }
+
+            .carouselLegend__secondaryTitle {
+                @extend h1;
+            }
+
+            .carouselLegend__paragraph {
+                font-weight: 700;
+            }
+
+            .carouselLegend__secondaryTitle, .carouselLegend__paragraph {
+                text-shadow: $whiteShadowText;
+            }
+        }
+    }
+}
+
+.latestLink {
+    text-decoration: none;
+    margin-bottom: $marginBottomCards;
+
+    &__text {
+        margin-top: 15px;
+        @include flexbox (column, null, center);
+
+        .text__title {
+            text-align: center;
+        }
+
+        .text__source {
+            @include fontProperties ($lightBlue, $subtitleSize, null, null, null, null);
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+.latestLink:hover {
+    border: 2px solid $bodyColor;
+    border-radius: $borderRadius;
+    transform: scale(1.05);
+
+    .latestLink__image {
+        border-top-left-radius: $borderRadius;
+        border-top-right-radius: $borderRadius;
+    }
+}
+
+.bulletinDivision {
+    @include flexbox (column, null, center);
+    background-color: $lightPink;
+}
+
+.warnBtn {
+    background-color: $mediumBlue;
+}
+
+
+/*-----------------------
+# Media Queries   
+-------------------------*/
+@media only screen and (max-width:600px) {
+
+    .indexCarousel {
+        height: 45vh;
+
+        &__carouselItem {
+
+            .carouselItem__carouselLegend {
+                bottom: 6rem;
+
+                .carouselLegend__paragraph {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+    }
+
+    .latestLink {
+        width: 80%;
+    }
+
+    .bulletinDivision {
+        &__container {
+            .container__textBox {
+                margin-bottom: 2vh;
+            }
+        }
+    }
+
+    .warnBtn {
+        margin: 2vh 0 3vh 0;
+    }
+
+    .partnersContainer {
+        &__logo {
+            max-width: 40%;
+            height: auto;
+            margin-bottom: $marginBottomCards;
+        }
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    .indexCarousel {
+        height: 60vh;
+
+        &__carouselItem {
+
+            .carouselItem__carouselLegend {
+                bottom: 9rem;
+
+                .carouselLegend__paragraph {
+                    font-size: 1.7rem;
+                }
+            }
+
+        }
+    }
+
+    .latestLink {
+        width: 60%;
+    }
+
+    .bulletinDivision {
+        &__container {
+            .container__textBox {
+                margin-bottom: 3vh;
+            }
+        }
+    }
+    
+    .warnBtn {
+        margin: 2vh 0 3vh 0;
+    }
+
+    .partnersContainer {
+        @include grid ($gridTwoCol, 3, $templateTwoCol, 2vh);
+        &__logo {
+            max-width: 65%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .indexCarousel {
+        height: 70vh;
+
+        &__carouselItem {
+
+            .carouselItem__carouselLegend {
+                bottom: 9rem;
+
+                .carouselLegend__paragraph {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+    }
+
+    .latestLink {
+            width: 40%;
+            min-height: 300px;
+            margin: 0 0.7vw 2vh 0.7vw;
+    }
+
+    .bulletinDivision {
+        &__container {
+            .container__textBox {
+                margin: 0 0.7vw 6vh 0.7vw;
+            }
+        }
+    }
+
+    .warnBtn {
+        margin: 0 10px 0 10px;
+    }
+
+    .partnersContainer {
+        @include grid ($gridThreeCol, 2, $templateThreeCol, 4vh);
+        &__logo {
+            max-width: 90%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .indexCarousel {
+
+        &__carouselItem {
+
+            .carouselItem__carouselLegend {
+
+                .carouselLegend__paragraph {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .partnersContainer {
+        row-gap: 8vh;
+        
+        &__logo {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .indexCarousel {
+        height: 90vh;
+
+        &__carouselItem {
+            .carouselItem__carouselLegend {
+                bottom: 15rem;
+            }
+
+        }
+    }
+
+}

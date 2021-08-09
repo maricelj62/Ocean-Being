@@ -1,0 +1,265 @@
+@import "_colors";
+@import "_variables";
+@import "_mixins";
+
+/*-----------------------
+# About
+-------------------------*/
+.aboutUsDivision {
+    &__contentBlock {
+        @include flexbox (column, center, center);
+    
+        .contentBlock__text {
+            @include fontProperties (null, null, null, $parFontType, $parFontStyle, center);
+        }
+    }
+}
+
+.pillarsContainer {
+    &__pillarsCircle {
+        @include flexbox (row, center, center);
+        margin: 50px 0 50px 0;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    
+        .pillarsCircle__text {
+            @include fontProperties (white, 1.9rem, 700, 'Mate SC', serif, null);
+        }
+    }
+}
+
+/*Función background Pilares*/
+$spanColors: (
+    imagineText: #01af01,
+    dreamText: #11698e,
+    discoverText: #16c79a,
+    createText: #FF6B6B
+);
+
+@each $span, $color in $spanColors {
+    .#{$span} {
+        background-color: $color;
+    }
+}
+/*Fin Función background Pilares*/
+
+.aboutBannerContainer {
+    background-image: url("../img/bannerAbout.webp");
+    background-size: cover; 
+    margin: 4vh 0 2vh 0;
+
+    &__text {
+        @include fontProperties (null, $bannerParSize, null, null, null, center);
+        @include whiteShadow (uppercase);
+    }
+}
+
+.actionAreasDivision {
+    &__topParagraph, &__endParagraph {
+        text-align: center;
+    }
+
+    &__imagesContainer {
+        margin: 8vh 0 10vh 0;
+
+        .imagesContainer__element {
+            background-size: cover;
+            @include flexbox (column, flex-end, center);
+    
+            .element__text {
+                margin-bottom: $marginBottomCards;
+                @include fontProperties ($bodyColor, 2.2rem, 900, null, null, center);
+                @include whiteShadow (capitalize);
+            }
+        }
+
+        .imagesContainer__element:hover {
+            transform: scale(1.1);
+        }
+
+        @each $var in Plastic, Diving, Exp {
+            .actionImg#{$var} {
+                background-image: url("../img/galeria/#{$var}.webp");
+            }
+        }
+    }
+
+    &__endParagraph {
+        font-size: $endMessageSize;
+    }
+}
+
+
+/*-----------------------
+# Media Queries   
+-------------------------*/
+@media only screen and (max-width:600px) {
+
+    .aboutUsDivision {
+        &__contentBlock {
+            /*height: 40vh;*/
+    
+            .contentBlock__image {
+                margin-top: 6vh;
+                max-width: 70%;
+                height: auto;
+            }
+        }
+    }
+
+    .pillarsContainer {
+        &__pillarsCircle {
+            width: 150px;
+            height: 150px; 
+        }
+    }
+
+    .aboutBannerContainer {
+        height: 280px;
+        padding: 60px 0 0 0;
+    }
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+            .imagesContainer__element {
+                width: 90%;
+                height: 400px;
+                margin: 1px 0 1px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    .aboutUsDivision {
+        &__contentBlock {
+            /*height: 35vh;*/
+    
+            .contentBlock__image {
+                margin-top: 7vh;
+                max-width: 68%;
+                height: auto;
+            }
+        }
+    }
+
+    .pillarsContainer {
+        @include grid ($gridTwoCol,
+                       2,
+                       "img1 img2"
+                       "img3 img4",
+                       0);                  
+        &__pillarsCircle {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    .aboutBannerContainer {
+        height: 300px;
+        padding: 80px 0 0 0;
+    }
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+            .imagesContainer__element {
+                width: 85%;
+                height: 450px;
+                margin: 1px 0 1px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .aboutUsDivision {
+        &__contentBlock {
+
+            .contentBlock__image {
+                margin-top: 8vh;
+                max-width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+    .aboutBannerContainer {
+        height: 330px;
+    }
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+            .imagesContainer__element {
+                width: 33%;
+                height: 320px;
+                margin: 0 1px 0 1px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .aboutUsDivision {
+        flex-direction: row;
+
+        &__contentBlock {
+            width: 50%;
+            height: 60vh;
+
+            .contentBlock__text {
+                width: 75%;
+            }
+
+            .contentBlock__image {
+                margin-top: 0;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .pillarsContainer {
+        @include flexbox (row, space-evenly, null);
+    }
+
+    .aboutBannerContainer {
+        height: 380px;
+        padding: 90px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .pillarsContainer {
+        &__pillarsCircle {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+            margin: 8vh 0 10vh 0;
+
+            .imagesContainer__element {
+                height: 380px;
+                margin: 0 0.7px 0 0.7px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+            .imagesContainer__element {
+                height: 465px;
+            }
+        }
+    }
+}

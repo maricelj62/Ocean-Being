@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos | Ocean Being</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tammudu+2:wght@500&family=Mate+SC&family=Montserrat&family=Sigmar+One&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="headMenu">
+    <nav class="headMenu__navigationBar navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navigationBar__logo navbar-brand" href="index.html">OCEAN BEING</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navigationBar__menuBox collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="menuBox__list navbar-nav">
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="about.html">Quiénes somos</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="programs.html">Programas</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="list__item nav-item">
+              <a class="item__anchor nav-link active" href="contact.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--Contáctanos-->
+    <section class="contactDivision">
+      <h1>Contáctanos</h1>
+      <form class="contactDivision__dataRecord">
+        <fieldset class="dataRecord__objectsGroup fieldBorder">
+          <label class="objectsGroup__text" for="nameFormContact">Nombre</label>
+          <input class="objectsGroup__dataEntry fieldBorder" type="text" id="nameFormContact" name="nameFormContact">
+          <label class="objectsGroup__text" for="emailFormContact">Correo</label>
+          <input class="objectsGroup__dataEntry fieldBorder" type="email" id="emailFormContact" name="emailFormContact">
+          <label class="objectsGroup__text" for="formComments">Mensaje</label>
+          <textarea class="objectsGroup__comments fieldBorder" id="formComments" name="formComments" cols="30" rows="10"></textarea>
+          <div class="objectsGroup__termsContainer">
+            <input type="checkbox" id="termsBox" name="termsBox" value="1">
+            <label class="termsContainer__text" for="termsBox">Acepto términos y condiciones</label>
+          </div>
+          <input class="generalBtn" type="submit" value="Enviar">
+        </fieldset>
+      </form>
+    </section>
+    <!--Fin Contáctanos-->
+
+  </main>
+
+  <footer class="endPage">
+    <ul class="endPage__socialLinks">
+      <li><a class="socialLinks__item socialLinks__Instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li><a class="socialLinks__item socialLinks__Facebook" href="https://www.facebook.com/" target="_blank">Facebbok</a></li>
+      <li><a class="socialLinks__item socialLinks__Twitter" href="https://twitter.com/" target="_blank">Twitter</a></li>
+      <li><a class="socialLinks__item socialLinks__Youtube" href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    </ul>
+    <p class="endPage__copyRight">Ocean Being - Derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@import "_colors";
+@import "_variables";
+@import "_mixins";
+/*-----------------------
+# Barra superior  
+-------------------------*/
+.headMenu {
+    border-bottom: 1px solid $bodyColor;
+    box-shadow:0px 0px 20px rgba(10, 4, 60, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    &__navigationBar {
+        background-color: $bodyColor;
+        padding: .5rem 3vw .5rem 3vw;
+
+        .navigationBar__logo {
+            @include fontProperties ($gray, 1.5rem, 300, 'Sigmar One', cursive, null);
+            text-decoration: none;
+        }
+
+        .navigationBar__menuBox {
+            justify-content: flex-end;
+
+            .menuBox__list {
+                margin-top: 2vh;
+
+                .list__item {
+                    margin: 0 0.5vw 0 0.5vw;
+
+                    .item__anchor {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,156 @@
+@import "_colors";
+@import "_variables";
+@import "_mixins";
+
+/*-----------------------
+# Estilos generales    
+-------------------------*/
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    line-height: 1.5;
+    @include fontProperties ($bodyColor, null, 500, 'Baloo Tammudu 2', cursive, null);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+hr {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    border: 2px solid $mediumBlue;
+}
+
+section {
+    padding: 10vh 7vw 10vh 7vw;
+}
+
+h1 {
+    @include fontProperties (null, null, 700, 'Mate SC', serif, center);
+    text-transform: uppercase;
+}
+
+h1, .secondTitle {
+    letter-spacing: 2px;
+}
+
+.secondTitle {
+    @include fontProperties (null, 2.3rem, 700, 'Abril Fatface', cursive, center);
+}
+
+.subtitle {
+    @include fontProperties ($mediumBlue, $subtitleSize, 700, $parFontType, $parFontStyle, null);
+    margin: 1vh 0 1vh 0;
+}
+
+.generalBtn {
+    @include fontProperties (white, null, 600, $parFontType, $parFontStyle, null);
+    @include radiusBgColor($borderRadius, $lightBlue);
+    border: $lightBlue;
+}
+
+.generalBtn:hover, .warnBtn:hover {
+    color: $lightPink;
+    background-color: $bodyColor;
+}
+
+
+/*-----------------------
+# Media Queries   
+-------------------------*/
+@media only screen and (max-width:600px) {
+    
+    :root {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h1, .secondTitle {
+        margin-bottom: 4vh;
+    }
+
+    .generalBtn {
+        width: 80px;
+        height: 35px;
+        border-radius: 12px;
+    }
+
+    .flexColumnMobile {
+        @include flexbox (column, center, center);
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    :root {
+        font-size: 14px;
+      }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h1, .secondTitle {
+        margin-bottom: 5vh;
+    }
+
+    .generalBtn {
+        width: 90px;
+        height: 38px;
+        border-radius: 14px;
+    }
+
+    .flexColumnMobile {
+        @include flexbox (column, center, center);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    :root {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h1, .secondTitle {
+        margin-bottom: 7vh;
+    }
+
+    .generalBtn {
+        width: 100px;
+        height: 40px;
+        border-radius: 16px;
+        margin: 0 10px 0 10px;
+    }
+
+    .flexRowMobile {
+        @include flexbox (row, center, center);
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    :root {
+        font-size: 16px;
+      }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+    
+    .flexRowMobile {
+        @include flexbox (row, center, center);
+    }
+}

@@ -1,0 +1,81 @@
+@import "_colors";
+@import "_variables";
+@import "_mixins";
+
+/*-----------------------
+# Contáctanos
+-------------------------*/
+.contactDivision {
+    @include flexbox (column, null, center);
+    line-height: 1.2;
+    margin-bottom: 50px;
+
+    &__dataRecord {
+
+        .fieldBorder {
+            border: 2px solid $gray;
+            border-radius: 4px;        
+        }
+
+        .dataRecord__objectsGroup {
+            @include flexbox (column, null, center);
+            background-color: #FFFAFA;
+            padding: 30px 0 40px 0;
+
+            .objectsGroup__dataEntry {
+                height: 32px;
+                margin-bottom: 20px;
+            }
+
+            .objectsGroup__dataEntry, .objectsGroup__comments {
+                width: 75%;
+            }
+
+            .objectsGroup__text {
+                position: relative;
+                right: 33%;
+            }
+
+            .objectsGroup__termsContainer {
+                margin: 35px 0 20px 0;
+
+                .termsContainer__text {
+                    @include fontProperties ($mediumBlue, 0.875rem, null, null, null, null);
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+
+/*-----------------------
+# Media Queries   
+-------------------------*/
+@media only screen and (max-width:600px) {
+
+    .contactDivision {
+        &__dataRecord {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    .contactDivision {
+        &__dataRecord {
+            width: 95%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .contactDivision {
+        &__dataRecord {
+            width: 50%;
+        }
+    }
+}

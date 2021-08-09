@@ -1,0 +1,39 @@
+@import "_variables";
+
+/*-----------------------
+# Mixin
+-------------------------*/
+@mixin fontProperties ($color, $fontSize, $fontWeight, $fontType, $fontStyle, $textAlign) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-family: $fontType, $fontStyle;
+    text-align: $textAlign;
+}
+
+@mixin radiusBgColor($bRadius, $bgColor) {
+    border-radius: $bRadius;
+    background-color: $bgColor;
+}
+
+@mixin whiteShadow($textTransform) {
+    text-transform: $textTransform;
+    text-shadow: $whiteShadowText;
+}
+
+@mixin flexbox ($flexDirection, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin grid ($templateColumns, $numRow, $templateAreas, $rowGap) {
+    display: grid;
+    grid-template-columns: $templateColumns;
+    grid-template-rows: repeat($numRow,1fr);
+    grid-template-areas: $templateAreas;
+    justify-items: center;
+    justify-content: center;
+    row-gap: $rowGap;
+}
