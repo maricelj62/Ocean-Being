@@ -163,16 +163,18 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 /*-----------------------
 # Inicio 
 -------------------------*/
-.indexCarousel__carouselItem {
-  background-size: cover; }
-  .indexCarousel__carouselItem .carouselItem__carouselLegend {
-    color: #0a043c; }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__mainTitle {
-      margin-bottom: 1vh; }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
-      font-weight: 700; }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
-      text-shadow: 1px 1px white; }
+.indexCarousel, .indexCarousel__carouselItem {
+  height: 90vh; }
+  .indexCarousel__carouselItem {
+    background-size: cover; }
+    .indexCarousel__carouselItem .carouselItem__carouselLegend {
+      color: #0a043c; }
+      .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__mainTitle {
+        margin-bottom: 1vh; }
+      .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
+        font-weight: 700; }
+      .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
+        text-shadow: 1px 1px white; }
 
 .latestLink {
   text-decoration: none;
@@ -211,7 +213,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 -------------------------*/
 @media only screen and (max-width: 600px) {
   .indexCarousel, .indexCarousel__carouselItem {
-    height: 45vh; }
+    /*height: 45vh;*/ }
     .indexCarousel__carouselItem .carouselItem__carouselLegend {
       bottom: 6rem; }
       .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
@@ -229,7 +231,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 
 @media only screen and (min-width: 600px) {
   .indexCarousel, .indexCarousel__carouselItem {
-    height: 60vh; }
+    /*height: 60vh;*/ }
     .indexCarousel__carouselItem .carouselItem__carouselLegend {
       bottom: 9rem; }
       .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
@@ -254,7 +256,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 
 @media only screen and (min-width: 768px) {
   .indexCarousel, .indexCarousel__carouselItem {
-    height: 70vh; }
+    /*height: 70vh;*/ }
     .indexCarousel__carouselItem .carouselItem__carouselLegend {
       bottom: 9rem; }
       .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
@@ -290,7 +292,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 
 @media only screen and (min-width: 1200px) {
   .indexCarousel, .indexCarousel__carouselItem {
-    height: 90vh; }
+    /*height: 90vh;*/ }
     .indexCarousel__carouselItem .carouselItem__carouselLegend {
       bottom: 15rem; } }
 

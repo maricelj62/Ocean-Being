@@ -5,7 +5,7 @@
 # Inicio 
 -------------------------*/
 .indexCarousel {
-
+    height: 90vh;
     &__carouselItem {
         background-size: cover;
         @extend .indexCarousel;
@@ -78,8 +78,7 @@
 @media only screen and (max-width:600px) {
 
     .indexCarousel {
-        height: 45vh;
-
+        /*height: 45vh;*/
         &__carouselItem {
 
             .carouselItem__carouselLegend {
@@ -121,7 +120,7 @@
 @media only screen and (min-width:600px) {
 
     .indexCarousel {
-        height: 60vh;
+        /*height: 60vh;*/
 
         &__carouselItem {
 
@@ -164,7 +163,7 @@
 @media only screen and (min-width: 768px) {
 
     .indexCarousel {
-        height: 70vh;
+        /*height: 70vh;*/
 
         &__carouselItem {
 
@@ -209,7 +208,6 @@
 @media only screen and (min-width: 992px) {
 
     .indexCarousel {
-
         &__carouselItem {
 
             .carouselItem__carouselLegend {
@@ -234,7 +232,7 @@
 @media only screen and (min-width: 1200px) {
 
     .indexCarousel {
-        height: 90vh;
+        /*height: 90vh;*/
 
         &__carouselItem {
             .carouselItem__carouselLegend {

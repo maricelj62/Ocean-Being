@@ -60,7 +60,15 @@
     <div id="carouselContainer" class="indexCarousel carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="indexCarousel__carouselItem carousel-item active" data-bs-interval="3000">
-          <img src="img/fondoIndex.webp" class="d-block w-100" alt="Fotografía de una medusa en el fondo del mar">
+          <picture>
+            <source media="(min-width:992px)" srcset="img/jellyfish-1900.png">
+            <source media="(min-width:480px)" srcset="img/jellyfish-992.png">
+            <source media="(min-width:320px)" srcset="img/jellyfish-480.png">   
+            <!--       
+            <source media="(max-width:320px)" srcset="img/jellyfish-320.png">
+            --> 
+            <img src="img/jellyfish-320.png" class="d-block w-100" alt="Fotografía de una medusa en el fondo del mar">
+          </picture>
           <div class="carouselItem__carouselLegend carousel-caption">
             <h1 class="carouselLegend__mainTitle">En sintonía con el océano</h1>
             <p class="carouselLegend__paragraph">Unidos Por Una Razón</p>
@@ -144,8 +152,7 @@
       <form>
         <div class="bulletinDivision__container flexColumnMobile flexRowMobile">
           <input type="text" class="container__textBox form-control" name="nameFormIndex" placeholder="Nombre">
-          <input type="text" class="container__textBox form-control" name="lastNameFormIndex"
-            placeholder="Apellidos">
+          <input type="text" class="container__textBox form-control" name="lastNameFormIndex" placeholder="Apellidos">
           <input type="email" class="container__textBox form-control" name="emailFormIndex"
             placeholder="Correo electrónico">
         </div>
@@ -158,7 +165,7 @@
     </section>
     <!--Fin Boletín-->
 
-    <!-- Modal Boletín -->
+    <!-- Modal Boletín-->
     <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -184,9 +191,11 @@
         <img class="partnersContainer__logo img-fluid" src="logos/AgendaDelMar.webp" alt="Logo de Agenda del Mar">
         <img class="partnersContainer__logo img-fluid" src="logos/coralesDePaz.webp" alt="Logo de Corales de Paz">
         <img class="partnersContainer__logo img-fluid" src="logos/oceana.webp" alt="Logo de Oceana">
-        <img class="partnersContainer__logo img-fluid" src="logos/oceanConservancy.webp" alt="Logo de Ocean Conservancy">
+        <img class="partnersContainer__logo img-fluid" src="logos/oceanConservancy.webp"
+          alt="Logo de Ocean Conservancy">
         <img class="partnersContainer__logo img-fluid" src="logos/wwf.webp" alt="Logo de WWF">
-        <img class="partnersContainer__logo img-fluid" src="logos/theOceanCleanUp.webp" alt="Logo de The Ocean Clean Up">
+        <img class="partnersContainer__logo img-fluid" src="logos/theOceanCleanUp.webp"
+          alt="Logo de The Ocean Clean Up">
       </div>
     </section>
     <!--Fin Apoyan-->
@@ -195,10 +204,13 @@
 
   <footer class="endPage">
     <ul class="endPage__socialLinks">
-      <li><a class="socialLinks__item socialLinks__Instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-      <li><a class="socialLinks__item socialLinks__Facebook" href="https://www.facebook.com/" target="_blank">Facebbok</a></li>
+      <li><a class="socialLinks__item socialLinks__Instagram" href="https://www.instagram.com/"
+          target="_blank">Instagram</a></li>
+      <li><a class="socialLinks__item socialLinks__Facebook" href="https://www.facebook.com/"
+          target="_blank">Facebbok</a></li>
       <li><a class="socialLinks__item socialLinks__Twitter" href="https://twitter.com/" target="_blank">Twitter</a></li>
-      <li><a class="socialLinks__item socialLinks__Youtube" href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+      <li><a class="socialLinks__item socialLinks__Youtube" href="https://www.youtube.com/" target="_blank">YouTube</a>
+      </li>
     </ul>
     <p class="endPage__copyRight">Ocean Being - Derechos reservados</p>
   </footer>
