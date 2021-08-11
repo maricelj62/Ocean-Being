@@ -105,6 +105,7 @@
 
     .blogContainer {
         @include grid ($gridTwoCol, 3, $templateTwoCol, 1vh);
+        column-gap: 1vh;
 
         &__enlace {
             width: 90%;

@@ -71,7 +71,12 @@
         </p>
       </div>
       <div class="aboutUsDivision__contentBlock">
-        <img class="contentBlock__image img-fluid" src="img/delfin.webp" alt="Silueta delfín">
+        <picture class="contentBlock__boxImage">
+          <source media="(min-width:768px)" srcset="img/dolphin-640.png">
+          <source media="(min-width:600px)" srcset="img/dolphin-420.png">
+          <img class="boxImage__icon img-fluid" src="img/dolphin-320.png" class="d-block w-100"
+            alt="Silueta de delfín">
+        </picture>
       </div>
     </section>
     <hr>
@@ -113,13 +118,13 @@
         ecosistemas marinos.</P>
 
       <div class="actionAreasDivision__imagesContainer flexColumnMobile flexRowMobile">
-        <div class="imagesContainer__element actionImgPlastic">
+        <div class="imagesContainer__element imgPlastic imgPlasticSm">
           <p class="element__text">Recolección<br> de basuras</p>
         </div>
-        <div class="imagesContainer__element actionImgDiving">
+        <div class="imagesContainer__element imgDiving imgDivingSm">
           <p class="element__text">Buceo<br> sostenible</p>
         </div>
-        <div class="imagesContainer__element actionImgExp">
+        <div class="imagesContainer__element imgExpedition imgExpeditionSm">
           <p class="element__text">Talleres de<br> entrenamiento</p>
         </div>
       </div>

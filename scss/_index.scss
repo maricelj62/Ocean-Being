@@ -75,14 +75,53 @@
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
 
     .indexCarousel {
-        /*height: 45vh;*/
         &__carouselItem {
 
             .carouselItem__carouselLegend {
-                bottom: 6rem;
+                bottom: 35vh;
+
+                .carouselLegend__paragraph {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .latestLink {
+        width: 80%;
+    }
+
+    .bulletinDivision {
+        &__container {
+            .container__textBox {
+                margin-bottom: 2vh;
+            }
+        }
+    }
+
+    .warnBtn {
+        margin: 2vh 0 3vh 0;
+    }
+
+    .partnersContainer {
+        &__logo {
+            max-width: 40%;
+            height: auto;
+            margin-bottom: $marginBottomCards;
+        }
+    }
+}
+
+@media only screen and (min-width:480px) {
+
+    .indexCarousel {
+        &__carouselItem {
+
+            .carouselItem__carouselLegend {
+                bottom: 36vh;
 
                 .carouselLegend__paragraph {
                     font-size: 1.8rem;
@@ -120,15 +159,13 @@
 @media only screen and (min-width:600px) {
 
     .indexCarousel {
-        /*height: 60vh;*/
 
         &__carouselItem {
 
             .carouselItem__carouselLegend {
-                bottom: 9rem;
 
                 .carouselLegend__paragraph {
-                    font-size: 1.7rem;
+                    font-size: 2rem;
                 }
             }
 
@@ -162,22 +199,6 @@
 
 @media only screen and (min-width: 768px) {
 
-    .indexCarousel {
-        /*height: 70vh;*/
-
-        &__carouselItem {
-
-            .carouselItem__carouselLegend {
-                bottom: 9rem;
-
-                .carouselLegend__paragraph {
-                    font-size: 1.8rem;
-                }
-            }
-
-        }
-    }
-
     .latestLink {
             width: 40%;
             min-height: 300px;
@@ -207,18 +228,6 @@
 
 @media only screen and (min-width: 992px) {
 
-    .indexCarousel {
-        &__carouselItem {
-
-            .carouselItem__carouselLegend {
-
-                .carouselLegend__paragraph {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-
     .partnersContainer {
         row-gap: 8vh;
         
@@ -232,11 +241,10 @@
 @media only screen and (min-width: 1200px) {
 
     .indexCarousel {
-        /*height: 90vh;*/
 
         &__carouselItem {
             .carouselItem__carouselLegend {
-                bottom: 15rem;
+                bottom: 35vh;
             }
 
         }

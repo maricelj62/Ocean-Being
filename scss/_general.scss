@@ -63,8 +63,33 @@ h1, .secondTitle {
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width:600px) {
-    
+@media only screen and (max-width:480px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h1, .secondTitle {
+        margin-bottom: 5vh;
+    }
+
+    .generalBtn {
+        width: 80px;
+        height: 35px;
+        border-radius: 12px;
+    }
+
+    .flexColumnMobile {
+        @include flexbox (column, center, center);
+    }
+}
+
+@media only screen and (min-width:480px){
+
     :root {
         font-size: 12px;
     }
@@ -74,7 +99,7 @@ h1, .secondTitle {
     }
 
     h1, .secondTitle {
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
 
     .generalBtn {
@@ -95,11 +120,11 @@ h1, .secondTitle {
       }
 
     h1 {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
 
     h1, .secondTitle {
-        margin-bottom: 5vh;
+        margin-bottom: 7vh;
     }
 
     .generalBtn {
@@ -117,14 +142,6 @@ h1, .secondTitle {
 
     :root {
         font-size: 15px;
-    }
-
-    h1 {
-        font-size: 2.6rem;
-    }
-
-    h1, .secondTitle {
-        margin-bottom: 7vh;
     }
 
     .generalBtn {
@@ -149,7 +166,7 @@ h1, .secondTitle {
     h1 {
         font-size: 3.2rem;
     }
-    
+  
     .flexRowMobile {
         @include flexbox (row, center, center);
     }

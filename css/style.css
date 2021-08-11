@@ -64,13 +64,30 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+  :root {
+    font-size: 12px; }
+  h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle {
+    font-size: 2rem; }
+  h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .secondTitle {
+    margin-bottom: 5vh; }
+  .generalBtn {
+    width: 80px;
+    height: 35px;
+    border-radius: 12px; }
+  .flexColumnMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media only screen and (min-width: 480px) {
   :root {
     font-size: 12px; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle {
     font-size: 2.5rem; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .secondTitle {
-    margin-bottom: 4vh; }
+    margin-bottom: 6vh; }
   .generalBtn {
     width: 80px;
     height: 35px;
@@ -85,9 +102,9 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   :root {
     font-size: 14px; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle {
-    font-size: 2.4rem; }
+    font-size: 3rem; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .secondTitle {
-    margin-bottom: 5vh; }
+    margin-bottom: 7vh; }
   .generalBtn {
     width: 90px;
     height: 38px;
@@ -101,10 +118,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 @media only screen and (min-width: 768px) {
   :root {
     font-size: 15px; }
-  h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle {
-    font-size: 2.6rem; }
-  h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .secondTitle {
-    margin-bottom: 7vh; }
   .generalBtn {
     width: 100px;
     height: 40px;
@@ -211,13 +224,27 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width: 600px) {
-  .indexCarousel, .indexCarousel__carouselItem {
-    /*height: 45vh;*/ }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend {
-      bottom: 6rem; }
-      .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
-        font-size: 1.8rem; }
+@media only screen and (max-width: 480px) {
+  .indexCarousel__carouselItem .carouselItem__carouselLegend {
+    bottom: 35vh; }
+    .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
+      font-size: 1.5rem; }
+  .latestLink {
+    width: 80%; }
+  .bulletinDivision__container .container__textBox {
+    margin-bottom: 2vh; }
+  .warnBtn {
+    margin: 2vh 0 3vh 0; }
+  .partnersContainer__logo {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 30px; } }
+
+@media only screen and (min-width: 480px) {
+  .indexCarousel__carouselItem .carouselItem__carouselLegend {
+    bottom: 36vh; }
+    .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
+      font-size: 1.8rem; }
   .latestLink {
     width: 80%; }
   .bulletinDivision__container .container__textBox {
@@ -230,12 +257,8 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     margin-bottom: 30px; } }
 
 @media only screen and (min-width: 600px) {
-  .indexCarousel, .indexCarousel__carouselItem {
-    /*height: 60vh;*/ }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend {
-      bottom: 9rem; }
-      .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
-        font-size: 1.7rem; }
+  .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
+    font-size: 2rem; }
   .latestLink {
     width: 60%; }
   .bulletinDivision__container .container__textBox {
@@ -255,12 +278,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       height: auto; } }
 
 @media only screen and (min-width: 768px) {
-  .indexCarousel, .indexCarousel__carouselItem {
-    /*height: 70vh;*/ }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend {
-      bottom: 9rem; }
-      .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
-        font-size: 1.8rem; }
   .latestLink {
     width: 40%;
     min-height: 300px;
@@ -282,8 +299,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       height: auto; } }
 
 @media only screen and (min-width: 992px) {
-  .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__paragraph {
-    font-size: 2rem; }
   .partnersContainer {
     row-gap: 8vh; }
     .partnersContainer__logo {
@@ -291,10 +306,8 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       height: auto; } }
 
 @media only screen and (min-width: 1200px) {
-  .indexCarousel, .indexCarousel__carouselItem {
-    /*height: 90vh;*/ }
-    .indexCarousel__carouselItem .carouselItem__carouselLegend {
-      bottom: 15rem; } }
+  .indexCarousel__carouselItem .carouselItem__carouselLegend {
+    bottom: 35vh; } }
 
 /*-----------------------
 # Mixin
@@ -310,6 +323,10 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   .aboutUsDivision__contentBlock .contentBlock__text {
     font-family: "Montserrat", sans-serif;
     text-align: center; }
+  .aboutUsDivision__contentBlock .contentBlock__boxImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
 
 .pillarsContainer__pillarsCircle {
   display: flex;
@@ -371,12 +388,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       text-shadow: 1px 1px white; }
   .actionAreasDivision__imagesContainer .imagesContainer__element:hover {
     transform: scale(1.1); }
-  .actionAreasDivision__imagesContainer .actionImgPlastic {
-    background-image: url("../img/galeria/Plastic.webp"); }
-  .actionAreasDivision__imagesContainer .actionImgDiving {
-    background-image: url("../img/galeria/Diving.webp"); }
-  .actionAreasDivision__imagesContainer .actionImgExp {
-    background-image: url("../img/galeria/Exp.webp"); }
 
 .actionAreasDivision__endParagraph {
   font-size: 2.5rem; }
@@ -384,13 +395,29 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width: 600px) {
-  .aboutUsDivision__contentBlock {
-    /*height: 40vh;*/ }
-    .aboutUsDivision__contentBlock .contentBlock__image {
-      margin-top: 6vh;
-      max-width: 70%;
-      height: auto; }
+@media only screen and (max-width: 480px) {
+  .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
+    margin-top: 6vh; }
+  .pillarsContainer__pillarsCircle {
+    width: 150px;
+    height: 150px; }
+  .aboutBannerContainer {
+    height: 280px;
+    padding: 60px 0 0 0; }
+  .actionAreasDivision__imagesContainer .imagesContainer__element {
+    width: 90%;
+    height: 320px;
+    margin: 1px 0 1px 0; }
+  .actionAreasDivision__imagesContainer .imgPlasticSm {
+    background-image: url("../img/gallery/imgPlasticSm.webp"); }
+  .actionAreasDivision__imagesContainer .imgDivingSm {
+    background-image: url("../img/gallery/imgDivingSm.webp"); }
+  .actionAreasDivision__imagesContainer .imgExpeditionSm {
+    background-image: url("../img/gallery/imgExpeditionSm.webp"); } }
+
+@media only screen and (min-width: 480px) {
+  .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
+    margin-top: 6vh; }
   .pillarsContainer__pillarsCircle {
     width: 150px;
     height: 150px; }
@@ -400,15 +427,17 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   .actionAreasDivision__imagesContainer .imagesContainer__element {
     width: 90%;
     height: 400px;
-    margin: 1px 0 1px 0; } }
+    margin: 1px 0 1px 0; }
+  .actionAreasDivision__imagesContainer .imgPlastic {
+    background-image: url("../img/gallery/imgPlastic.webp"); }
+  .actionAreasDivision__imagesContainer .imgDiving {
+    background-image: url("../img/gallery/imgDiving.webp"); }
+  .actionAreasDivision__imagesContainer .imgExpedition {
+    background-image: url("../img/gallery/imgExpedition.webp"); } }
 
 @media only screen and (min-width: 600px) {
-  .aboutUsDivision__contentBlock {
-    /*height: 35vh;*/ }
-    .aboutUsDivision__contentBlock .contentBlock__image {
-      margin-top: 7vh;
-      max-width: 68%;
-      height: auto; }
+  .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
+    margin-top: 7vh; }
   .pillarsContainer {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -429,16 +458,20 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     margin: 1px 0 1px 0; } }
 
 @media only screen and (min-width: 768px) {
-  .aboutUsDivision__contentBlock .contentBlock__image {
-    margin-top: 8vh;
-    max-width: 80%;
-    height: auto; }
+  .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
+    margin-top: 8vh; }
   .aboutBannerContainer {
     height: 330px; }
   .actionAreasDivision__imagesContainer .imagesContainer__element {
     width: 33%;
     height: 320px;
-    margin: 0 1px 0 1px; } }
+    margin: 0 1px 0 1px; }
+  .actionAreasDivision__imagesContainer .imgPlasticSm {
+    background-image: url("../img/gallery/imgPlasticSm.webp"); }
+  .actionAreasDivision__imagesContainer .imgDivingSm {
+    background-image: url("../img/gallery/imgDivingSm.webp"); }
+  .actionAreasDivision__imagesContainer .imgExpeditionSm {
+    background-image: url("../img/gallery/imgExpeditionSm.webp"); } }
 
 @media only screen and (min-width: 992px) {
   .aboutUsDivision {
@@ -448,17 +481,21 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       height: 60vh; }
       .aboutUsDivision__contentBlock .contentBlock__text {
         width: 75%; }
-      .aboutUsDivision__contentBlock .contentBlock__image {
-        margin-top: 0;
-        max-width: 100%;
-        height: auto; }
+      .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
+        margin-top: 0; }
   .pillarsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
   .aboutBannerContainer {
     height: 380px;
-    padding: 90px 0 0 0; } }
+    padding: 90px 0 0 0; }
+  .actionAreasDivision__imagesContainer .imgPlastic {
+    background-image: url("../img/gallery/imgPlastic.webp"); }
+  .actionAreasDivision__imagesContainer .imgDiving {
+    background-image: url("../img/gallery/imgDiving.webp"); }
+  .actionAreasDivision__imagesContainer .imgExpedition {
+    background-image: url("../img/gallery/imgExpedition.webp"); } }
 
 @media only screen and (min-width: 1200px) {
   .pillarsContainer__pillarsCircle {
@@ -648,7 +685,8 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
     justify-items: center;
     justify-content: center;
-    row-gap: 1vh; }
+    row-gap: 1vh;
+    column-gap: 1vh; }
     .blogContainer__enlace {
       width: 90%;
       margin: 10px 0 10px 0; }

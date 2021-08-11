@@ -12,6 +12,10 @@
         .contentBlock__text {
             @include fontProperties (null, null, null, $parFontType, $parFontStyle, center);
         }
+
+        .contentBlock__boxImage {
+            @include flexbox (row, center, null);
+        }
     }
 }
 
@@ -78,11 +82,6 @@ $spanColors: (
             transform: scale(1.1);
         }
 
-        @each $var in Plastic, Diving, Exp {
-            .actionImg#{$var} {
-                background-image: url("../img/galeria/#{$var}.webp");
-            }
-        }
     }
 
     &__endParagraph {
@@ -94,16 +93,55 @@ $spanColors: (
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
 
     .aboutUsDivision {
         &__contentBlock {
-            /*height: 40vh;*/
-    
-            .contentBlock__image {
-                margin-top: 6vh;
-                max-width: 70%;
-                height: auto;
+            .contentBlock__boxImage {
+                .boxImage__icon {
+                    margin-top: 6vh;              
+                }
+            }
+        }
+    }
+
+    .pillarsContainer {
+        &__pillarsCircle {
+            width: 150px;
+            height: 150px; 
+        }
+    }
+
+    .aboutBannerContainer {
+        height: 280px;
+        padding: 60px 0 0 0;
+    }
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+            .imagesContainer__element {
+                width: 90%;
+                height: 320px;
+                margin: 1px 0 1px 0;
+            }
+
+            @each $var in PlasticSm, DivingSm, ExpeditionSm {
+                .img#{$var} {
+                    background-image: url("../img/gallery/img#{$var}.webp");
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px) {
+
+    .aboutUsDivision {
+        &__contentBlock {
+            .contentBlock__boxImage {
+                .boxImage__icon {
+                    margin-top: 6vh;              
+                }
             }
         }
     }
@@ -127,6 +165,12 @@ $spanColors: (
                 height: 400px;
                 margin: 1px 0 1px 0;
             }
+
+            @each $var in Plastic, Diving, Expedition {
+                .img#{$var} {
+                    background-image: url("../img/gallery/img#{$var}.webp");
+                }
+            }
         }
     }
 }
@@ -135,12 +179,10 @@ $spanColors: (
 
     .aboutUsDivision {
         &__contentBlock {
-            /*height: 35vh;*/
-    
-            .contentBlock__image {
-                margin-top: 7vh;
-                max-width: 68%;
-                height: auto;
+            .contentBlock__boxImage {
+                .boxImage__icon {
+                    margin-top: 7vh;
+                }
             }
         }
     }
@@ -177,11 +219,10 @@ $spanColors: (
 
     .aboutUsDivision {
         &__contentBlock {
-
-            .contentBlock__image {
-                margin-top: 8vh;
-                max-width: 80%;
-                height: auto;
+            .contentBlock__boxImage {
+                .boxImage__icon {
+                    margin-top: 8vh;                
+                }
             }
         }
     }
@@ -196,6 +237,12 @@ $spanColors: (
                 width: 33%;
                 height: 320px;
                 margin: 0 1px 0 1px;
+            }
+
+            @each $var in PlasticSm, DivingSm, ExpeditionSm {
+                .img#{$var} {
+                    background-image: url("../img/gallery/img#{$var}.webp");
+                }
             }
         }
     }
@@ -214,10 +261,10 @@ $spanColors: (
                 width: 75%;
             }
 
-            .contentBlock__image {
-                margin-top: 0;
-                max-width: 100%;
-                height: auto;
+            .contentBlock__boxImage {
+                .boxImage__icon {
+                    margin-top: 0;              
+                }
             }
         }
     }
@@ -229,6 +276,17 @@ $spanColors: (
     .aboutBannerContainer {
         height: 380px;
         padding: 90px 0 0 0;
+    }
+
+    .actionAreasDivision {
+        &__imagesContainer {   
+
+            @each $var in Plastic, Diving, Expedition {
+                .img#{$var} {
+                    background-image: url("../img/gallery/img#{$var}.webp");
+                }
+            }
+        }
     }
 }
 
