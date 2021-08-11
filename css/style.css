@@ -68,9 +68,9 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   :root {
     font-size: 12px; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle {
-    font-size: 2rem; }
+    font-size: 2.3rem; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .secondTitle {
-    margin-bottom: 6vh; }
+    margin-bottom: 5vh; }
   .generalBtn {
     width: 80px;
     height: 35px;
@@ -235,10 +235,12 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     margin-bottom: 2vh; }
   .warnBtn {
     margin: 2vh 0 3vh 0; }
-  .partnersContainer__logo {
-    max-width: 40%;
-    height: auto;
-    margin-bottom: 30px; } }
+  .partnersContainer {
+    margin-top: 7vh; }
+    .partnersContainer__logo {
+      max-width: 40%;
+      height: auto;
+      margin-bottom: 30px; } }
 
 @media only screen and (min-width: 480px) {
   .indexCarousel__carouselItem .carouselItem__carouselLegend {
@@ -332,35 +334,32 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     flex-direction: row;
     justify-content: center; }
 
-.pillarsContainer__pillarsCircle {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 5vh 0 5vh 0;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%; }
-  .pillarsContainer__pillarsCircle .pillarsCircle__text {
-    color: white;
-    font-size: 1.9rem;
-    font-weight: 700;
-    font-family: "Mate SC", serif; }
+.pillarsContainer {
+  /*Función background Pilares*/
+  /*Fin Función background Pilares*/ }
+  .pillarsContainer__pillarsCircle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0 5vh 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+    .pillarsContainer__pillarsCircle .pillarsCircle__text {
+      color: white;
+      font-size: 1.9rem;
+      font-weight: 700;
+      font-family: "Mate SC", serif; }
+  .pillarsContainer .imagineText {
+    background-color: #01af01; }
+  .pillarsContainer .dreamText {
+    background-color: #11698e; }
+  .pillarsContainer .discoverText {
+    background-color: #16c79a; }
+  .pillarsContainer .createText {
+    background-color: #FF6B6B; }
 
-/*Función background Pilares*/
-.imagineText {
-  background-color: #01af01; }
-
-.dreamText {
-  background-color: #11698e; }
-
-.discoverText {
-  background-color: #16c79a; }
-
-.createText {
-  background-color: #FF6B6B; }
-
-/*Fin Función background Pilares*/
 .aboutBannerContainer {
   background-image: url("../img/bannerAbout.webp");
   background-size: cover;
@@ -527,24 +526,25 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 /*-----------------------
 # Programas    
 -------------------------*/
-.programsDivision__programsCard {
-  border-radius: 16px;
-  background-color: #dfdfdf;
-  padding: 80px 0 40px 0;
-  margin-bottom: 30px; }
-  .programsDivision__programsCard .programsCard__iconContainer .iconContainer__text {
-    margin-top: 15px;
-    font-size: 1.25rem;
-    text-align: center; }
-  .programsDivision__programsCard .programsCard__description .description__list {
-    margin-top: 20px;
-    font-family: "Montserrat", sans-serif; }
-
-.programsDivision__programsCard:hover {
-  border: 2px solid #00AFB9; }
-
-.programsDivision__pinkCard {
-  background-color: #f8f1f1; }
+.programsDivision {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .programsDivision__programsCard {
+    border-radius: 2rem;
+    background-color: #dfdfdf;
+    margin-bottom: 5vh; }
+    .programsDivision__programsCard .programsCard__iconContainer .iconContainer__text {
+      margin-top: 15px;
+      font-size: 1.25rem;
+      text-align: center; }
+    .programsDivision__programsCard .programsCard__description .description__list {
+      margin-top: 20px;
+      font-family: "Montserrat", sans-serif; }
+  .programsDivision__programsCard:hover {
+    border: 2px solid #00AFB9; }
+  .programsDivision__pinkCard {
+    background-color: #f8f1f1; }
 
 .blueBannerContainer {
   display: flex;
@@ -552,7 +552,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   justify-content: center;
   align-items: center;
   background-color: #00AFB9;
-  padding: 30px 30px 30px 30px;
   padding: 5vh 5vh 5vh 5vh; }
   .blueBannerContainer__text {
     color: #f8f1f1;
@@ -569,35 +568,42 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 # Media Queries   
 -------------------------*/
 @media only screen and (max-width: 480px) {
-  .programsDivision__programsCard .programsCard__description {
-    width: 80%;
-    margin: 10px 0 10px 0; }
-    .programsDivision__programsCard .programsCard__description .description__list {
-      padding-left: 30px; }
+  .programsDivision__programsCard {
+    padding: 5vh 1vw 5vh 1vw; }
+    .programsDivision__programsCard .programsCard__description {
+      width: 80%;
+      margin: 10px 0 10px 0; }
+      .programsDivision__programsCard .programsCard__description .description__list {
+        padding-left: 30px; }
+  .blueBannerContainer {
+    height: 400px; }
   .rowImgPrograms__image {
     margin: 1.5px 0 1.5px 0; } }
 
 @media only screen and (min-width: 480px) {
-  .programsDivision__programsCard .programsCard__description {
-    width: 80%;
-    margin: 10px 0 10px 0; }
-    .programsDivision__programsCard .programsCard__description .description__list {
-      padding-left: 30px; }
+  .programsDivision__programsCard {
+    width: 90%;
+    padding: 5vh 2vw 5vh 2vw; }
+    .programsDivision__programsCard .programsCard__description {
+      width: 80%;
+      margin: 10px 0 10px 0; }
+      .programsDivision__programsCard .programsCard__description .description__list {
+        padding-left: 30px; }
   .blueBannerContainer {
     height: 300px; }
   .rowImgPrograms__image {
     margin: 1.5px 0 1.5px 0; } }
 
 @media only screen and (min-width: 600px) {
-  .programsDivision__programsCard .programsCard__description {
-    width: 60%; }
   .rowImgPrograms__image {
     margin: 2.5px 0 2.5px 0; } }
 
 @media only screen and (min-width: 768px) {
   .programsDivision__programsCard {
+    width: 95%;
     justify-content: space-evenly; }
     .programsDivision__programsCard .programsCard__description {
+      width: 60%;
       margin: 0 0 0 0; }
   .gridImgRowPrograms {
     display: grid;
@@ -627,6 +633,8 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     padding-left: 40px; } }
 
 @media only screen and (min-width: 1200px) {
+  .programsDivision__programsCard {
+    padding: 8vh 2vw 8vh 2vw; }
   .gridImgRowPrograms {
     display: flex;
     flex-direction: row; }
@@ -679,8 +687,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     .hashtagContainer__item .item__text {
       font-size: 1.25rem;
       margin-top: 10px; }
-  .hashtagContainer__item:hover {
-    transform: rotate(15deg); }
 
 /*-----------------------
 # Media Queries   
@@ -825,18 +831,18 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     justify-content: center;
     padding-left: 0; }
     .endPage__socialLinks .socialLinks__item {
-      color: #364E68; }
-    .endPage__socialLinks .fa-instagram:hover {
-      color: #FF0080; }
-    .endPage__socialLinks .fa-facebook-f:hover {
-      color: #3B5998; }
-    .endPage__socialLinks .fa-twitter:hover {
-      color: #00ACEE; }
-    .endPage__socialLinks .fa-youtube:hover {
-      color: #C4302B; }
+      color: #113C4A; }
+      .endPage__socialLinks .socialLinks__item .fa-instagram:hover {
+        color: #FF0080; }
+      .endPage__socialLinks .socialLinks__item .fa-facebook-f:hover {
+        color: #3B5998; }
+      .endPage__socialLinks .socialLinks__item .fa-twitter:hover {
+        color: #00ACEE; }
+      .endPage__socialLinks .socialLinks__item .fa-youtube:hover {
+        color: #C4302B; }
   .endPage__copyRight {
+    color: #19456b;
     font-size: 1.1rem;
-    margin-top: 10px;
     margin-top: 2vh; }
 
 /*-----------------------

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entérate | Ocean Being</title>
+    <title>Últimas novedades | Ocean Being</title>
+    <meta name="description"
+        content="Entérate de las últimas novedades y tendencias de lo que está pasando en el océano. Conoce más sobre cambio climático, sobrepesca y especies en peligro de extinción.">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,6 +18,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tammudu+2:wght@500&family=Mate+SC&family=Montserrat&family=Sigmar+One&display=swap"
         rel="stylesheet">
+
+    <!--Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
@@ -166,16 +171,18 @@
 
         <!--Div Hashtag-->
         <div class="hashtagContainer flexColumnMobile">
-            <div class="hashtagContainer__item">
-                <img class="item__image" src="logos/noPlastics.jpg" alt="Menos plástico">
+            <div class="hashtagContainer__item" data-aos="flip-left" data-aos-duration="1000">
+                <img class="item__image" src="logos/noPlastics.jpg" alt="Imagen representativa del plástico en el mar">
                 <p class="item__text">#MenosPlásticoMásVida</p>
             </div>
-            <div class="hashtagContainer__item">
-                <img class="item__image" src="logos/greenFriday.png" alt="Green friday">
+            <div class="hashtagContainer__item" data-aos="flip-left" data-aos-duration="1000">
+                <img class="item__image" src="logos/greenFriday.png"
+                    alt="Ícono de campaña para práctica de Green Friday">
                 <p class="item__text">#Todosporelgreenfriday</p>
             </div>
-            <div class="hashtagContainer__item">
-                <img class="item__image" src="logos/stopOverFishing.png" alt="Stop overfishing">
+            <div class="hashtagContainer__item" data-aos="flip-left" data-aos-duration="1000">
+                <img class="item__image" src="logos/stopOverFishing.png"
+                    alt="Silueta de un pez con mensaje de stop overfishing">
                 <p class="item__text">#StopOverfishing</p>
             </div>
         </div>
@@ -185,19 +192,19 @@
 
     <footer class="endPage">
         <ul class="endPage__socialLinks">
-          <li><a class="socialLinks__item" href="https://www.instagram.com/" target="_blank"><i
-                class="fab fa-instagram fa-2x"></i></a></li>
-          <li><a class="socialLinks__item" href="https://www.facebook.com/" target="_blank"><i
-                class="fab fa-facebook-f fa-2x"></i></i></a>
-          </li>
-          <li><a class="socialLinks__item" href="https://twitter.com/" target="_blank"><i
-                class="fab fa-twitter fa-2x"></i></a></li>
-          <li><a class="socialLinks__item" href="https://www.youtube.com/" target="_blank"><i
-                class="fab fa-youtube fa-2x"></i></a>
-          </li>
+            <li><a class="socialLinks__item" href="https://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a class="socialLinks__item" href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f fa-2x"></i></a>
+            </li>
+            <li><a class="socialLinks__item" href="https://twitter.com/" target="_blank"><i
+                        class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a class="socialLinks__item" href="https://www.youtube.com/" target="_blank"><i
+                        class="fab fa-youtube fa-2x"></i></a>
+            </li>
         </ul>
         <p class="endPage__copyRight">Ocean Being - Derechos reservados</p>
-      </footer>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -206,6 +213,13 @@
 
     <!--Íconos Font Awesome-->
     <script src="https://kit.fontawesome.com/6ffe00c73b.js" crossorigin="anonymous"></script>
+
+    <!--Animaciones-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 
 </html>

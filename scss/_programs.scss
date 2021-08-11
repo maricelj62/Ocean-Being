@@ -6,10 +6,11 @@
 # Programas    
 -------------------------*/
 .programsDivision {
+    @include flexbox(column, null, center);
+
     &__programsCard {
-        @include radiusBgColor($borderRadius, $gray);
-        padding: 80px 0 40px 0;
-        margin-bottom: $marginBottomCards;
+        @include radiusBgColor(2rem, $gray);
+        margin-bottom: 5vh;
 
         .programsCard__iconContainer {
             .iconContainer__text {
@@ -38,7 +39,6 @@
 .blueBannerContainer {
     @include flexbox (row, center, center);
     background-color: $lightBlue;
-    padding: 30px 30px 30px 30px;
     padding: 5vh 5vh 5vh 5vh;
 
     &__text {
@@ -63,6 +63,7 @@
 
     .programsDivision {
         &__programsCard {    
+            padding: 5vh 1vw 5vh 1vw;
             .programsCard__description {
                 width: 80%;
                 margin: 10px 0 10px 0;
@@ -72,6 +73,10 @@
                 }
             }
         }
+    }
+
+    .blueBannerContainer {
+        height: 400px;
     }
 
     .rowImgPrograms {  
@@ -84,7 +89,9 @@
 @media only screen and (min-width:480px) {
 
     .programsDivision {
-        &__programsCard {    
+        &__programsCard { 
+            width: 90%; 
+            padding: 5vh 2vw 5vh 2vw;
             .programsCard__description {
                 width: 80%;
                 margin: 10px 0 10px 0;
@@ -109,14 +116,6 @@
 
 @media only screen and (min-width:600px) {
 
-    .programsDivision {
-        &__programsCard {    
-            .programsCard__description {
-                width: 60%;
-            }
-        }
-    }
-
     .rowImgPrograms {
         &__image {
             margin: 2.5px 0 2.5px 0;
@@ -127,15 +126,17 @@
 @media only screen and (min-width: 768px) {
 
     .programsDivision {
-        &__programsCard {    
+        &__programsCard {
+            width: 95%; 
             justify-content: space-evenly;
 
             .programsCard__description {
+                width: 60%;
                 margin: 0 0 0 0;
             }
         }
     }
-
+    
     .gridImgRowPrograms {
         @include grid (repeat(6,1fr), 2, null, 30px);
 
@@ -169,7 +170,7 @@
 @media only screen and (min-width: 992px) {
 
     .programsDivision {
-        &__programsCard {    
+        &__programsCard { 
             .programsCard__description {
                 .description__list {
                     padding-left: 40px;
@@ -180,6 +181,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
+
+    .programsDivision {
+        &__programsCard { 
+            padding: 8vh 2vw 8vh 2vw;
+        }
+    }
 
     .gridImgRowPrograms {
         @include flexbox (row, null, null);

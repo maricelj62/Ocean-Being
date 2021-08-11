@@ -31,22 +31,23 @@
             @include fontProperties (white, 1.9rem, 700, 'Mate SC', serif, null);
         }
     }
-}
 
-/*Función background Pilares*/
-$spanColors: (
-    imagineText: #01af01,
-    dreamText: #11698e,
-    discoverText: #16c79a,
-    createText: #FF6B6B
-);
+    /*Función background Pilares*/
+    $spanColors: (
+        imagineText: #01af01,
+        dreamText: #11698e,
+        discoverText: #16c79a,
+        createText: #FF6B6B
+    );
 
-@each $span, $color in $spanColors {
-    .#{$span} {
-        background-color: $color;
+    @each $span, $color in $spanColors {
+        .#{$span} {
+            background-color: $color;
+        }
     }
+    /*Fin Función background Pilares*/
 }
-/*Fin Función background Pilares*/
+
 
 .aboutBannerContainer {
     background-image: url("../img/bannerAbout.webp");

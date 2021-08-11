@@ -1,6 +1,7 @@
 @import "_colors";
 @import "_variables";
 @import "_mixins";
+
 /*-----------------------
 # Inicio 
 -------------------------*/
@@ -107,6 +108,7 @@
     }
 
     .partnersContainer {
+        margin-top: 7vh;
         &__logo {
             max-width: 40%;
             height: auto;
@@ -127,7 +129,6 @@
                     font-size: 1.8rem;
                 }
             }
-
         }
     }
 
@@ -159,9 +160,7 @@
 @media only screen and (min-width:600px) {
 
     .indexCarousel {
-
         &__carouselItem {
-
             .carouselItem__carouselLegend {
 
                 .carouselLegend__paragraph {
@@ -243,17 +242,14 @@
 @media only screen and (min-width: 1200px) {
 
     .indexCarousel {
-
         &__carouselItem {
             .carouselItem__carouselLegend {
                 bottom: 35vh;
             }
-
         }
     }
 
     .bulletinDivision {
         padding: 15vh 0 15vh 0;
     }
-
 }
