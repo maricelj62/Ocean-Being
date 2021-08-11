@@ -14,14 +14,14 @@ Frameworks:
 Bootstrap
 
 Librerías de animaciones:
-https://animate.style/
+https://animate.style/,
 https://michalsnik.github.io/aos/
 
 Librerías de íconos:
 https://fontawesome.com/
 
 Software:
-Visual Studio Code
+Visual Studio Code,
 Node.js
 
 Requisitos para modificar las hojas de estilo:
