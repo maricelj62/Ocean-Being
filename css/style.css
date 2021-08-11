@@ -831,7 +831,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     justify-content: center;
     padding-left: 0; }
     .endPage__socialLinks .socialLinks__item {
-      color: #113C4A; }
+      color: #364E68; }
       .endPage__socialLinks .socialLinks__item .fa-instagram:hover {
         color: #FF0080; }
       .endPage__socialLinks .socialLinks__item .fa-facebook-f:hover {
@@ -841,7 +841,6 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       .endPage__socialLinks .socialLinks__item .fa-youtube:hover {
         color: #C4302B; }
   .endPage__copyRight {
-    color: #19456b;
     font-size: 1.1rem;
     margin-top: 2vh; }
 
