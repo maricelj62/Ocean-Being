@@ -79,24 +79,28 @@
 -------------------------*/
 @media only screen and (max-width:600px) {
 
-    .blogContainer__link {
-        width: 80%;
-        margin: 10px 0 10px 0;
-
-        .link__blogCard {
-            .blogCard__text {
-                min-height: 150px;
-
+    .blogContainer {
+        &__link {
+            width: 80%;
+            margin: 2vh 0 2vh 0;
+    
+            .link__blogCard {
+                .blogCard__text {
+                    min-height: 150px;
+    
+                }
             }
         }
     }
 
-    .hashtagContainer__item {
-        margin: 3vh 0 3vh 0;
-
-        .item__image {
-            max-width: 80%;
-            height: auto;
+    .hashtagContainer {
+        &__item {
+            margin: 3vh 0 3vh 0;
+    
+            .item__image {
+                max-width: 80%;
+                height: auto;
+            }
         }
     }
 }
@@ -105,11 +109,10 @@
 
     .blogContainer {
         @include grid ($gridTwoCol, 3, $templateTwoCol, 1vh);
-        column-gap: 1vh;
 
-        &__enlace {
+        &__link {
             width: 90%;
-            margin: 10px 0 10px 0;
+            margin: 1vh 0 1vh 0;
     
             .link__blogCard {
                 .blogCard__text {
@@ -142,7 +145,7 @@
         @include grid ($gridThreeCol, 2, $templateThreeCol, 25px);
         column-gap: 25px;
 
-        &__enlace {
+        &__link {
             width: 100%;
             margin: 0 0 0 0;
     
@@ -157,19 +160,22 @@
 
 @media only screen and (min-width: 1400px) {
 
-    .blogContainer__link {
-
-        .link__blogCard {
-            .blogCard__text {
-                min-height: 220px;
+    .blogContainer {
+        &__link {
+            .link__blogCard {
+                .blogCard__text {
+                    min-height: 220px;
+                }
             }
         }
     }
 
-    .hashtagContainer__item {
-        .item__image {
-            max-width: 100%;
-            height: auto;
+    .hashtagContainer {
+        &__item {
+            .item__image {
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
 }

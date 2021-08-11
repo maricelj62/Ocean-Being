@@ -38,8 +38,8 @@
 .blueBannerContainer {
     @include flexbox (row, center, center);
     background-color: $lightBlue;
-    height: 300px;
-    padding: 0 30px 0 30px;
+    padding: 30px 30px 30px 30px;
+    padding: 5vh 5vh 5vh 5vh;
 
     &__text {
         @include fontProperties ($lightPink, $bannerParSize, null, null, null, center);
@@ -59,7 +59,7 @@
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
 
     .programsDivision {
         &__programsCard {    
@@ -81,17 +81,38 @@
     }
 }
 
+@media only screen and (min-width:480px) {
+
+    .programsDivision {
+        &__programsCard {    
+            .programsCard__description {
+                width: 80%;
+                margin: 10px 0 10px 0;
+
+                .description__list {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    .blueBannerContainer {
+        height: 300px;
+    }
+
+    .rowImgPrograms {  
+        &__image {
+            margin: 1.5px 0 1.5px 0;
+        }
+    }
+}
+
 @media only screen and (min-width:600px) {
 
     .programsDivision {
         &__programsCard {    
             .programsCard__description {
                 width: 60%;
-                margin: 10px 0 10px 0;
-
-                .description__list {
-                    padding-left: 30px;
-                }
             }
         }
     }
@@ -108,6 +129,10 @@
     .programsDivision {
         &__programsCard {    
             justify-content: space-evenly;
+
+            .programsCard__description {
+                margin: 0 0 0 0;
+            }
         }
     }
 

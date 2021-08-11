@@ -70,7 +70,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle {
     font-size: 2rem; }
   h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__secondaryTitle, .secondTitle {
-    margin-bottom: 5vh; }
+    margin-bottom: 6vh; }
   .generalBtn {
     width: 80px;
     height: 35px;
@@ -282,8 +282,10 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     width: 40%;
     min-height: 300px;
     margin: 0 0.7vw 2vh 0.7vw; }
-  .bulletinDivision__container .container__textBox {
-    margin: 0 0.7vw 6vh 0.7vw; }
+  .bulletinDivision {
+    padding: 12vh 0 12vh 0; }
+    .bulletinDivision__container .container__textBox {
+      margin: 0 0.7vw 6vh 0.7vw; }
   .warnBtn {
     margin: 0 10px 0 10px; }
   .partnersContainer {
@@ -307,7 +309,9 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 
 @media only screen and (min-width: 1200px) {
   .indexCarousel__carouselItem .carouselItem__carouselLegend {
-    bottom: 35vh; } }
+    bottom: 35vh; }
+  .bulletinDivision {
+    padding: 15vh 0 15vh 0; } }
 
 /*-----------------------
 # Mixin
@@ -333,7 +337,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 50px 0;
+  margin: 5vh 0 5vh 0;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%; }
@@ -399,14 +403,14 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
     margin-top: 6vh; }
   .pillarsContainer__pillarsCircle {
-    width: 150px;
-    height: 150px; }
+    width: 135px;
+    height: 135px; }
   .aboutBannerContainer {
     height: 280px;
-    padding: 60px 0 0 0; }
+    padding: 60px 5px 0 5px; }
   .actionAreasDivision__imagesContainer .imagesContainer__element {
     width: 90%;
-    height: 320px;
+    height: 50vh;
     margin: 1px 0 1px 0; }
   .actionAreasDivision__imagesContainer .imgPlasticSm {
     background-image: url("../img/gallery/imgPlasticSm.webp"); }
@@ -460,6 +464,9 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 @media only screen and (min-width: 768px) {
   .aboutUsDivision__contentBlock .contentBlock__boxImage .boxImage__icon {
     margin-top: 8vh; }
+  .pillarsContainer__pillarsCircle {
+    width: 170px;
+    height: 170px; }
   .aboutBannerContainer {
     height: 330px; }
   .actionAreasDivision__imagesContainer .imagesContainer__element {
@@ -487,6 +494,9 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
+    .pillarsContainer__pillarsCircle {
+      width: 170px;
+      height: 170px; }
   .aboutBannerContainer {
     height: 380px;
     padding: 90px 0 0 0; }
@@ -542,8 +552,8 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   justify-content: center;
   align-items: center;
   background-color: #00AFB9;
-  height: 300px;
-  padding: 0 30px 0 30px; }
+  padding: 30px 30px 30px 30px;
+  padding: 5vh 5vh 5vh 5vh; }
   .blueBannerContainer__text {
     color: #f8f1f1;
     font-size: 3.125rem;
@@ -558,7 +568,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .programsDivision__programsCard .programsCard__description {
     width: 80%;
     margin: 10px 0 10px 0; }
@@ -567,18 +577,28 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   .rowImgPrograms__image {
     margin: 1.5px 0 1.5px 0; } }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
   .programsDivision__programsCard .programsCard__description {
-    width: 60%;
+    width: 80%;
     margin: 10px 0 10px 0; }
     .programsDivision__programsCard .programsCard__description .description__list {
       padding-left: 30px; }
+  .blueBannerContainer {
+    height: 300px; }
+  .rowImgPrograms__image {
+    margin: 1.5px 0 1.5px 0; } }
+
+@media only screen and (min-width: 600px) {
+  .programsDivision__programsCard .programsCard__description {
+    width: 60%; }
   .rowImgPrograms__image {
     margin: 2.5px 0 2.5px 0; } }
 
 @media only screen and (min-width: 768px) {
   .programsDivision__programsCard {
     justify-content: space-evenly; }
+    .programsDivision__programsCard .programsCard__description {
+      margin: 0 0 0 0; }
   .gridImgRowPrograms {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -668,7 +688,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
 @media only screen and (max-width: 600px) {
   .blogContainer__link {
     width: 80%;
-    margin: 10px 0 10px 0; }
+    margin: 2vh 0 2vh 0; }
     .blogContainer__link .link__blogCard .blogCard__text {
       min-height: 150px; }
   .hashtagContainer__item {
@@ -685,12 +705,11 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
     justify-items: center;
     justify-content: center;
-    row-gap: 1vh;
-    column-gap: 1vh; }
-    .blogContainer__enlace {
+    row-gap: 1vh; }
+    .blogContainer__link {
       width: 90%;
-      margin: 10px 0 10px 0; }
-      .blogContainer__enlace .link__blogCard .blogCard__text {
+      margin: 1vh 0 1vh 0; }
+      .blogContainer__link .link__blogCard .blogCard__text {
         min-height: 230px; }
   .hashtagContainer__item {
     margin: 3vh 0 3vh 0; }
@@ -715,10 +734,10 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     justify-content: center;
     row-gap: 25px;
     column-gap: 25px; }
-    .blogContainer__enlace {
+    .blogContainer__link {
       width: 100%;
       margin: 0 0 0 0; }
-      .blogContainer__enlace .link__blogCard .blogCard__text {
+      .blogContainer__link .link__blogCard .blogCard__text {
         min-height: 250px; } }
 
 @media only screen and (min-width: 1400px) {
@@ -750,7 +769,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
     background-color: #FFFAFA;
     padding: 30px 0 40px 0; }
     .contactDivision__dataRecord .dataRecord__objectsGroup .objectsGroup__dataEntry {
-      height: 32px;
+      height: 5vh;
       margin-bottom: 20px; }
     .contactDivision__dataRecord .dataRecord__objectsGroup .objectsGroup__dataEntry, .contactDivision__dataRecord .dataRecord__objectsGroup .objectsGroup__comments {
       width: 75%; }
@@ -758,7 +777,7 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
       position: relative;
       right: 33%; }
     .contactDivision__dataRecord .dataRecord__objectsGroup .objectsGroup__termsContainer {
-      margin: 35px 0 20px 0; }
+      margin: 5vh 0 4vh 0; }
       .contactDivision__dataRecord .dataRecord__objectsGroup .objectsGroup__termsContainer .termsContainer__text {
         color: #19456b;
         font-size: 0.875rem;
@@ -775,7 +794,15 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   .contactDivision__dataRecord {
     width: 95%; } }
 
+@media only screen and (min-width: 992px) {
+  .contactDivision__dataRecord {
+    width: 80%; } }
+
 @media only screen and (min-width: 1200px) {
+  .contactDivision__dataRecord {
+    width: 70%; } }
+
+@media only screen and (min-width: 1400px) {
   .contactDivision__dataRecord {
     width: 50%; } }
 
@@ -790,37 +817,39 @@ h1, .indexCarousel__carouselItem .carouselItem__carouselLegend .carouselLegend__
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #dfdfdf;
-  height: 35vh; }
+  background-color: #dfdfdf; }
   .endPage__socialLinks {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 28%; }
+    justify-content: center;
+    padding-left: 0; }
     .endPage__socialLinks .socialLinks__item {
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: 600; }
-    .endPage__socialLinks .socialLinks__Instagram {
+      color: #364E68; }
+    .endPage__socialLinks .fa-instagram:hover {
       color: #FF0080; }
-    .endPage__socialLinks .socialLinks__Facebook {
+    .endPage__socialLinks .fa-facebook-f:hover {
       color: #3B5998; }
-    .endPage__socialLinks .socialLinks__Twitter {
+    .endPage__socialLinks .fa-twitter:hover {
       color: #00ACEE; }
-    .endPage__socialLinks .socialLinks__Youtube {
+    .endPage__socialLinks .fa-youtube:hover {
       color: #C4302B; }
   .endPage__copyRight {
     font-size: 1.1rem;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-top: 2vh; }
 
 /*-----------------------
 # Media Queries   
 -------------------------*/
-@media only screen and (max-width: 600px) {
-  .endPage__socialLinks .socialLinks__item {
-    margin: 0 5px 0 5px; } }
+@media only screen and (max-width: 768px) {
+  .endPage {
+    height: 40vh; }
+    .endPage__socialLinks .socialLinks__item {
+      margin: 0 1vw 0 1vw; } }
 
-@media only screen and (min-width: 600px) {
-  .endPage__socialLinks .socialLinks__item {
-    margin: 0 10px 0 10px; } }
+@media only screen and (min-width: 768px) {
+  .endPage {
+    height: 45vh; }
+    .endPage__socialLinks .socialLinks__item {
+      margin: 0 0.6vw 0 0.6vw; } }

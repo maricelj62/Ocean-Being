@@ -22,7 +22,7 @@
 .pillarsContainer {
     &__pillarsCircle {
         @include flexbox (row, center, center);
-        margin: 50px 0 50px 0;
+        margin: 5vh 0 5vh 0;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
@@ -107,21 +107,21 @@ $spanColors: (
 
     .pillarsContainer {
         &__pillarsCircle {
-            width: 150px;
-            height: 150px; 
+            width: 135px;
+            height: 135px;
         }
     }
 
     .aboutBannerContainer {
         height: 280px;
-        padding: 60px 0 0 0;
+        padding: 60px 5px 0 5px;
     }
 
     .actionAreasDivision {
         &__imagesContainer {   
             .imagesContainer__element {
                 width: 90%;
-                height: 320px;
+                height: 50vh;
                 margin: 1px 0 1px 0;
             }
 
@@ -149,7 +149,7 @@ $spanColors: (
     .pillarsContainer {
         &__pillarsCircle {
             width: 150px;
-            height: 150px; 
+            height: 150px;
         }
     }
 
@@ -227,6 +227,13 @@ $spanColors: (
         }
     }
 
+    .pillarsContainer {                 
+        &__pillarsCircle {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
     .aboutBannerContainer {
         height: 330px;
     }
@@ -271,6 +278,10 @@ $spanColors: (
 
     .pillarsContainer {
         @include flexbox (row, space-evenly, null);
+        &__pillarsCircle {
+            width: 170px;
+            height: 170px;
+        }
     }
 
     .aboutBannerContainer {
@@ -279,7 +290,7 @@ $spanColors: (
     }
 
     .actionAreasDivision {
-        &__imagesContainer {   
+        &__imagesContainer {
 
             @each $var in Plastic, Diving, Expedition {
                 .img#{$var} {
