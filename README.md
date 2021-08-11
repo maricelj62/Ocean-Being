@@ -27,7 +27,7 @@ Node.js
 Requisitos para modificar las hojas de estilo:
 - Luego de instalar Node.js, verificar que se tenga instalado npm (comando: npm).
 - Inicializar npm en la carpeta del proyecto:
-    npm init
+    npm init,
     npm install -D node-sass nodemon
     - Crear los archivos .css y .scss dentro de las carpetas respectivas.
     - En el package.json, adicionar las siguientes líneas, de acuerdo con los nombres de
